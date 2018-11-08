@@ -1,158 +1,180 @@
 html {
- height: 100%;
+    height: 100%;
 }
 
 @font-face {
- font-family: didot;
- src: url(../font/didot.ttf);
+    font-family: didot;
+    src: url(../font/didot.ttf);
 }
 
 body {
- font-family: 'Domine', serif;
- height: 100%;
+    font-family: 'Domine', serif;
+    height: 100%;
 }
 
 .wrapper {
- width: 100%;
- height: 100%;
- scroll-behavior: smooth;
- overflow-y: scroll;
+    width: 100%;
+    height: 100%;
+    scroll-behavior: smooth;
+    overflow-y: scroll;
 }
 
 .sidenav {
- width: auto;
- position: fixed;
- z-index: 1;
- top: 150px;
- background: #56bafd;
- overflow-x: hidden;
- padding: 8px 0;
+    width: auto;
+    position: fixed;
+    z-index: 1;
+    top: 150px;
+    background: #56bafd;
+    overflow-x: hidden;
+    padding: 8px 0;
+}
+
+.bar {
+    width: auto;
+    position: fixed;
+    z-index: 1;
+    top: 100px;
+    background: #56bafd;
+    overflow-x: hidden;
+    padding: 8px 0;
+}
+
+.bar button {
+    padding: 6px 15px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: block;
 }
 
 .sidenav a {
- padding: 6px 15px 6px 16px;
- text-decoration: none;
- font-size: 25px;
- color: black;
- display: block;
+    padding: 6px 15px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: block;
 }
 
 .sidenav a:hover,
 a:active {
- background-color: white;
+    background-color: white;
 }
 
-
 .large-card-shadow {
- box-shadow: 0 16px 32px 0 rgba(98, 140, 255, 0.6), 0 16px 32px 0 rgba(98, 140, 255, 0.6);
+    box-shadow: 0 16px 32px 0 rgba(98, 140, 255, 0.6), 0 16px 32px 0 rgba(98, 140, 255, 0.6);
 }
 
 #about {
- background-color: #ffffff;
- width: 100%;
- height: relative;
- margin-top: 30px;
- margin-bottom: 30px;
- padding-left: 80px;
+    background-color: #ffffff;
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-left: 80px;
 }
 
 #education {
- background: rgba(142, 196, 221, 0.7);
- width: 100%;
- height: relative;
- padding-left: 80px;
- margin-top: 150px;
+    background: rgba(142, 196, 221, 0.7);
+    width: 100%;
+    height: auto;
+    padding-left: 80px;
+    margin-top: 150px;
 }
 
 #experience {
- background: #ffffff;
- width: 100%;
- height: relative;
- padding-left: 80px;
+    background: #ffffff;
+    width: 100%;
+    height: auto;
+    padding-left: 80px;
 }
 
 .parallax {
- /* The image used */
- background-image: url('../img/img.jpg');
+    /* The image used */
+    background-image: url('../img/img.jpg');
 
- /* Full height */
- height: 100%;
+    /* Full height */
+    height: 100%;
 
- /* Create the parallax scrolling effect */
- background-attachment: fixed;
- background-position: center;
- background-repeat: no-repeat;
- background-size: cover;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 
 }
 
 .trans {
- background: rgba(142, 196, 221, 0.7);
- height: 100%;
+    background: rgba(142, 196, 221, 0.7);
+    height: 100%;
 }
 
 #home {
- height: 80%;
+    height: 80%;
 }
 
 .center {
- text-align: center;
+    text-align: center;
 }
 
 .home-content {
- padding: 50px;
+    padding: 50px;
 }
 
 .white {
- color: #ffffff;
+    color: #ffffff;
 }
 
 .bg-white {
- background-color: #ffffff;
+    background-color: #ffffff;
 }
 
 p {
- font-size: 18px;
+    font-size: 18px;
 }
 
 .left-padding-20 {
- padding-left: 20px;
+    padding-left: 20px;
 }
 
 ul.timeline {
- list-style-type: none;
- position: relative;
+    list-style-type: none;
+    position: relative;
 }
 
 ul.timeline:before {
- content: ' ';
- background: #d4d9df;
- display: inline-block;
- position: absolute;
- left: 29px;
- width: 2px;
- height: 100%;
- z-index: 400;
+    content: ' ';
+    background: #d4d9df;
+    display: inline-block;
+    position: absolute;
+    left: 29px;
+    width: 2px;
+    height: 100%;
+    z-index: 400;
 }
 
-ul.timeline>li {
- margin: 20px 0;
- padding-left: 20px;
+ul.timeline > li {
+    margin: 20px 0;
+    padding-left: 20px;
 }
 
-ul.timeline>li:before {
- content: ' ';
- background: white;
- display: inline-block;
- position: absolute;
- border-radius: 50%;
- border: 3px solid #22c0e8;
- left: 20px;
- width: 20px;
- height: 20px;
- z-index: 400;
+ul.timeline > li:before {
+    content: ' ';
+    background: white;
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    border: 3px solid #22c0e8;
+    left: 20px;
+    width: 20px;
+    height: 20px;
+    z-index: 400;
 }
 
 .top-margin {
- margin-top: 20px;
+    margin-top: 20px;
 }
+
+.hide{
+    display: none;
+}
+
